@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+// font-family: 'Outfit', sans-serif;
+* {margin: 0; padding: 0; box-sizing: border-box; font-size: 18px;} // box-sizing -->esto ayudara a que el padding y el contenido se sume para tener medidas mas exactas
+// ou'll need to use max-width instead of width to make the container more responsive for smaller screens, you'll also need to add paddings to the left and right of the body to give it a bit of space from the container when it goes below the specified max-width.
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$VDB-Main-BG: hsl(217, 54%, 11%);
+$VDB-Card-BG: hsl(216, 50%, 16%);
+$VDB-Line: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%); 
+
+body {
+    
+}
