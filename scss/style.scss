@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 // font-family: 'Outfit', sans-serif;
-* {margin: 0; padding: 0; box-sizing: border-box; font-size: 18px;} // box-sizing -->esto ayudara a que el padding y el contenido se sume para tener medidas mas exactas
+* {margin: 0; padding: 0; box-sizing: border-box; font-size: 18px; font-family: 'Outfit', sans-serif;} // box-sizing -->esto ayudara a que el padding y el contenido se sume para tener medidas mas exactas
 // ou'll need to use max-width instead of width to make the container more responsive for smaller screens, you'll also need to add paddings to the left and right of the body to give it a bit of space from the container when it goes below the specified max-width.
 $soft-blue: hsl(215, 51%, 70%);
 $cyan: hsl(178, 100%, 50%);
@@ -10,5 +10,120 @@ $VDB-Line: hsl(215, 32%, 27%);
 $White: hsl(0, 0%, 100%); 
 
 body {
-    
+    background-color: $VDB-Main-BG;
+    section {
+        .section-card {
+            article {
+                background-color: $VDB-Card-BG;
+                max-width: 375px;
+                margin: 60px auto 60px auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 25px;
+                border-radius: 20px;
+                figure {
+                    border-radius: 20px;
+                    .eye-icon {
+                        display: none;
+                    }
+                    .nft-img {
+                        max-width: 325px;
+                        border-radius: 20px;
+                    }
+                }
+                figure:hover {
+                    .eye-icon {
+
+                    }
+                }
+                .text-container {
+                    .titles-container {
+                        display: flex;
+                        margin-top: 20px;
+                        .name-nft {
+                            color: $soft-blue;
+                            font-size: 24px;
+                            font-weight: 600;
+                            margin-right: 10px;
+                        }
+                        .num-nft {
+                            color: $White;
+                            font-size: 24px;
+                            font-weight: 600;
+                        }
+                    }
+                    .titles-container:hover {
+                        cursor: pointer;
+                        .name-nft, .num-nft {color: $cyan;}
+                    }
+                .description-nft {
+                    p {
+                        color: $soft-blue;
+                        font-weight: 100;
+                        margin-top: 14px;
+                    }
+                }
+                .price-time-nft {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 18px 2px;
+                    .price {
+                        color: $cyan;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 5px;
+                        }
+                        p {
+                            font-weight: 600;
+                        }
+                    }
+                    .time {
+                        display: flex;
+                        color: $soft-blue;
+                        align-items: center;
+                        img {
+                            margin-right: 5px;
+                        }
+                        p {
+                            font-weight: 100;
+                        }
+                    }
+                }
+                hr {
+
+                    border: 1px solid $VDB-Line;
+                }
+                .user-data {
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    div {
+                        img {
+                            width: 40px;
+                            margin-right: 10px;
+                        }
+                    }
+                    p {
+                        color: $soft-blue;
+                        b {
+                            color: $White;
+                            font-weight: 100;
+                        }
+                        b:hover {
+                            color: $cyan;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+    footer {
+        .attribution {
+            font-size: 11px; text-align: center; 
+            a { color: hsl(228, 45%, 44%); }
+        }
+    }
 }

@@ -3,4 +3,85 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif; }
+
+body {
+  background-color: #0d192b; }
+  body section .section-card article {
+    background-color: #14253d;
+    max-width: 375px;
+    margin: 60px auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 20px; }
+    body section .section-card article figure {
+      border-radius: 20px; }
+      body section .section-card article figure .eye-icon {
+        display: none; }
+      body section .section-card article figure .nft-img {
+        max-width: 325px;
+        border-radius: 20px; }
+    body section .section-card article .text-container .titles-container {
+      display: flex;
+      margin-top: 20px; }
+      body section .section-card article .text-container .titles-container .name-nft {
+        color: #8bacda;
+        font-size: 24px;
+        font-weight: 600;
+        margin-right: 10px; }
+      body section .section-card article .text-container .titles-container .num-nft {
+        color: white;
+        font-size: 24px;
+        font-weight: 600; }
+    body section .section-card article .text-container .titles-container:hover {
+      cursor: pointer; }
+      body section .section-card article .text-container .titles-container:hover .name-nft, body section .section-card article .text-container .titles-container:hover .num-nft {
+        color: #00fff7; }
+    body section .section-card article .text-container .description-nft p {
+      color: #8bacda;
+      font-weight: 100;
+      margin-top: 14px; }
+    body section .section-card article .text-container .price-time-nft {
+      display: flex;
+      justify-content: space-between;
+      margin: 18px 2px; }
+      body section .section-card article .text-container .price-time-nft .price {
+        color: #00fff7;
+        display: flex;
+        align-items: center; }
+        body section .section-card article .text-container .price-time-nft .price img {
+          margin-right: 5px; }
+        body section .section-card article .text-container .price-time-nft .price p {
+          font-weight: 600; }
+      body section .section-card article .text-container .price-time-nft .time {
+        display: flex;
+        color: #8bacda;
+        align-items: center; }
+        body section .section-card article .text-container .price-time-nft .time img {
+          margin-right: 5px; }
+        body section .section-card article .text-container .price-time-nft .time p {
+          font-weight: 100; }
+    body section .section-card article .text-container hr {
+      border: 1px solid #2f415b; }
+    body section .section-card article .text-container .user-data {
+      margin-top: 20px;
+      display: flex;
+      align-items: center; }
+      body section .section-card article .text-container .user-data div img {
+        width: 40px;
+        margin-right: 10px; }
+      body section .section-card article .text-container .user-data p {
+        color: #8bacda; }
+        body section .section-card article .text-container .user-data p b {
+          color: white;
+          font-weight: 100; }
+        body section .section-card article .text-container .user-data p b:hover {
+          color: #00fff7; }
+  body footer .attribution {
+    font-size: 11px;
+    text-align: center; }
+    body footer .attribution a {
+      color: #3e52a3; }
