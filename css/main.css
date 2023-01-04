@@ -18,12 +18,30 @@ body {
     padding: 25px;
     border-radius: 20px; }
     body section .section-card article figure {
-      border-radius: 20px; }
+      cursor: pointer;
+      position: relative; }
       body section .section-card article figure .eye-icon {
-        display: none; }
-      body section .section-card article figure .nft-img {
-        max-width: 325px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
         border-radius: 20px; }
+        body section .section-card article figure .eye-icon img {
+          margin: 43% 0 0 43%; }
+      body section .section-card article figure .nft-img img {
+        width: 325px;
+        border-radius: 20px;
+        margin: auto;
+        display: block; }
+    body section .section-card article figure:hover .eye-icon {
+      background-color: #00fff7;
+      transition: all .5s ease-in-out;
+      opacity: .9; }
+    body section .section-card article figure:hover .nft-img img {
+      color: #00fff7;
+      transition: all .5s ease-in-out;
+      opacity: .5; }
     body section .section-card article .text-container .titles-container {
       display: flex;
       margin-top: 20px; }
