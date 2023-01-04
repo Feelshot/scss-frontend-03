@@ -90,7 +90,9 @@ body {
       align-items: center; }
       body section .section-card article .text-container .user-data div img {
         width: 40px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        border-radius: 20px;
+        border: 1px solid white; }
       body section .section-card article .text-container .user-data p {
         color: #8bacda; }
         body section .section-card article .text-container .user-data p b {
